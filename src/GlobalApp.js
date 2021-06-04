@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { GlobalAppContext } from './';
+import App from "./App"
 import './App.css';
 import Movies from './Pages/Movies';
 import AddMovie from './Pages/Movies/AddMovie';
@@ -20,6 +21,9 @@ function App() {
           <Switch>
             <Route exact path='/'>
               <Movies />
+            </Route>
+            <Route exact path='/rest'>
+              <App />
             </Route>
             <Route exact path='/addMovie'>
               <AddMovie />

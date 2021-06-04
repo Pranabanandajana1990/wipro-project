@@ -5,7 +5,7 @@ import App from "./App"
 import './App.css';
 import Movies from './Pages/Movies';
 import AddMovie from './Pages/Movies/AddMovie';
-function App() {
+function GlobalApp() {
   const [movies, setMovies] = useState([
     { MovieId: '1', MovieName: 'test', LeadActor: 'actor' },
   ]);
@@ -38,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default GlobalApp;

@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import GlobalApp from './GlobalApp';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+export const GlobalAppContext = React.createContext({
+  state: { movies: [] },
+  setState: (newState) => null,
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <GlobalApp />
   </React.StrictMode>,
   document.getElementById('root')
 );

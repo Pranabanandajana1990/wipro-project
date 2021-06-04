@@ -1,0 +1,4 @@
+.movies {
+  display: flex;
+  max-width: 90vw;
+}
